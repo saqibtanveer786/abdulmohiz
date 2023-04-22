@@ -1,0 +1,47 @@
+#brief_description {
+  height: 70vh;
+
+  /* margin-block-start: -10px; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#brief_description > .slide > #brief_image {
+  height: 210px;
+  width: 210px;
+  background: url(../../assets/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 50%;
+
+  border: 2px solid rgb(230, 216, 216);
+  outline: 2px solid #233150;
+}
+
+#brief_content {
+  text-align: center;
+  padding-block-start: 15px;
+}
+
+#brief_content > h1 {
+  color: #3e497a;
+  font-size: xx-large;
+  margin-block-end: 8px;
+}
+
+#brief_content > p {
+  color: #3d3f49;
+  font-size: large;
+  margin-block-end: 8px;
+}
+
+#brief_content > span {
+  height: 10px;
+  width: 20px;
+  background-color: red;
+}

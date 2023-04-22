@@ -1,0 +1,19 @@
+#card {
+  border: 2px solid black;
+  width: clamp(290px, 22vw, 300px);
+}
+
+#card_pic {
+  height: 210px;
+  background-color: red;
+  border-radius: 0 0 10px 10px;
+}
+
+#card_content {
+  text-align: center;
+  padding-block: 20px;
+}
+
+#card_content > h1 {
+  font-size: 25px;
+}

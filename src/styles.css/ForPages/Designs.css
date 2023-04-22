@@ -1,0 +1,7 @@
+#design_cards_container {
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+  place-items: center;
+  gap: 15px;
+}

@@ -1,0 +1,36 @@
+#skill_section {
+  width: 70%;
+  margin: auto;
+
+  padding-block: 60px;
+}
+
+#skill_section > ul,
+#skill_section > .zoom > h1 {
+  margin: auto;
+  color: #21325e;
+}
+
+#skill_section > .zoom > h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#skill_section > ul {
+  list-style-type: none;
+  padding-block-start: 35px;
+}
+
+#skill_section > ul > li {
+  padding-block: 10px;
+}
+
+#skill_section > ul > li > h1 {
+  font-size: xx-large;
+}
+
+#skill_section > ul > li > p {
+  font-size: medium;
+  padding-block-start: 30px;
+  width: min(400px, 90%);
+}

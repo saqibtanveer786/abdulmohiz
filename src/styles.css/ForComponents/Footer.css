@@ -1,0 +1,20 @@
+footer {
+  height: 120px;
+  background-color: #21325e;
+  color: white;
+  font-size: smaller;
+
+  padding-inline: 15vw;
+  padding-block-start: 40px;
+  padding-block-end: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+.social_media_icons_footer > a {
+  text-decoration: none;
+  color: white;
+  margin-inline: 5px;
+}
