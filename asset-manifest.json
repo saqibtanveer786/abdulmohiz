@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/abdulmohiz/static/css/main.5a92290b.css",
+    "main.css": "/abdulmohiz/static/css/main.f6fa2097.css",
     "main.js": "/abdulmohiz/static/js/main.a3ab00f7.js",
     "static/js/787.13fe893b.chunk.js": "/abdulmohiz/static/js/787.13fe893b.chunk.js",
     "static/media/abdulmohiz2.jpg": "/abdulmohiz/static/media/abdulmohiz2.19b2586acf778f3af48d.jpg",
@@ -11,12 +11,12 @@
     "static/media/doortaj.jpg": "/abdulmohiz/static/media/doortaj.5c1a369ca5bf9bedd1af.jpg",
     "static/media/abdulmohiz.jpg": "/abdulmohiz/static/media/abdulmohiz.925cf3981f9cc7bb9b96.jpg",
     "index.html": "/abdulmohiz/index.html",
-    "main.5a92290b.css.map": "/abdulmohiz/static/css/main.5a92290b.css.map",
+    "main.f6fa2097.css.map": "/abdulmohiz/static/css/main.f6fa2097.css.map",
     "main.a3ab00f7.js.map": "/abdulmohiz/static/js/main.a3ab00f7.js.map",
     "787.13fe893b.chunk.js.map": "/abdulmohiz/static/js/787.13fe893b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a92290b.css",
+    "static/css/main.f6fa2097.css",
     "static/js/main.a3ab00f7.js"
   ]
 }
