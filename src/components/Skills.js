@@ -13,7 +13,7 @@ export default function Skills() {
         <Zoom className="zoom">
           <h1 id="skill_section_heading">Skills</h1>
         </Zoom>
-        <Slide cascade damping={0.1}>
+        <Slide className="slide" cascade damping={0.1}>
           <ul>
             <li>
               <h1>2D Designing</h1>

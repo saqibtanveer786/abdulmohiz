@@ -1,12 +1,8 @@
 #card {
-  border: 2px solid black;
-  width: clamp(290px, 22vw, 300px);
-}
-
-#card_pic {
-  height: 210px;
-  background-color: red;
-  border-radius: 0 0 10px 10px;
+  /* box-shadow: 2px 2px 5px gray; */
+  border-radius: 10px 10px 0 0;
+  width: 300px;
+  overflow: hidden;
 }
 
 #card_content {
@@ -15,5 +11,12 @@
 }
 
 #card_content > h1 {
-  font-size: 25px;
+  color: rgb(19, 17, 17);
+  font-size: 20px;
+}
+
+@media (max-width: 550px) {
+  #card {
+    width: 90vw;
+  }
 }

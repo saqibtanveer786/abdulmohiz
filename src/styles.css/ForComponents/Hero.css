@@ -1,5 +1,5 @@
 #hero_section {
-  height: 88vh;
+  height: 100vh;
 
   display: flex;
   /* flex-direction: column; */
@@ -14,8 +14,8 @@
       rgba(12, 28, 80, 0.85),
       rgba(56, 58, 63, 0.85)
     ),
-    url(../../assets/6929207_2516.jpg);
-  background-position: center;
+    url(../../assets/forHomePage/abdulmohiz.jpg);
+  background-position: 0 5%;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -24,18 +24,19 @@
   padding-inline: 20px;
 }
 
-.cols {
+#col1,
+#col2 {
   height: 100%;
 }
 
-.col1 {
+#col1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 
   padding-block-start: 70px;
-  padding-inline-start: 10vw;
+  padding-inline-start: 100px;
 
   width: 100%;
 }
@@ -45,18 +46,20 @@
   background-color: transparent;
 } */
 
-#upper_p {
-  font-size: clamp(20px, 3vw, 25px);
-}
-
 #hero_section_text h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: clamp(38px, 8vw, 50px);
-  color: #e0cd5e;
 }
 
 #hero_section_text #first_heading {
-  font-size: clamp(34px, 8vw, 46px);
+  font-size: clamp(28px, 7%, 40px);
+  color: #e0cd5e;
+}
+
+#hero_section_text #second_heading {
+  font-size: clamp(38px, 8em, 50px);
+  color: #e0cd5e;
+  line-height: 50px;
+  padding-block-start: 10px;
 }
 
 #lower_p {
@@ -65,7 +68,7 @@
 }
 
 #social-media-icons-hero {
-  margin-block-start: 15px;
+  margin-block-start: 25px;
 }
 
 #social-media-icons-hero > a {
@@ -78,13 +81,21 @@
   margin-inline: 5px;
 }
 
-@media (max-width: 550px) {
-  .col1 {
+@media (max-width: 1000px) {
+  #col1 {
     padding: 0;
     text-align: center;
 
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  /* .col1 #second_heading {
+    text-align: center;
+  } */
+
+  #hero_section {
+    background-position: center;
   }
 }

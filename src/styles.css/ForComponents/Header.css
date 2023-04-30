@@ -45,6 +45,8 @@
   border: none;
 
   padding-inline-end: 10px;
+
+  cursor: pointer;
 }
 
 .menu_line {

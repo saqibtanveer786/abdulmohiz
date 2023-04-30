@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import InstagramIcon from '@mui/icons-material/Phone';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 //IMPORTING CSS FILE
 import '../styles.css/ForComponents/Footer.css';
@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="copyright">
           <p>&copy; 2023 AbdulMohiz.com</p>
         </div>
-        <div className="social_media_icons_footer">
+        <div id="social_media_icons_footer">
           <Link to={'https://www.instagram.com/abdul.mohiz.pk11/'}>
             <InstagramIcon />
           </Link>
@@ -28,7 +28,7 @@ export default function Footer() {
           >
             <FacebookIcon />
           </Link>
-          <Link to={'http://abdul.mohiz.pk11@gmail.co'}>
+          <Link to={'mailto:abdul.mohiz.pk11@gmail.com'}>
             <MailOutlineIcon />
           </Link>
           <Link

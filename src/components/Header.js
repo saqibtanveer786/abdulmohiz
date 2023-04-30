@@ -52,6 +52,13 @@ export default function Header() {
                 Experience
               </Link>
             </li>
+            {localStorage.getItem('admin') && (
+              <li>
+                <Link to="/admin" onClick={navigating}>
+                  Admin
+                </Link>
+              </li>
+            )}
           </ul>
         </nav>
       </header>

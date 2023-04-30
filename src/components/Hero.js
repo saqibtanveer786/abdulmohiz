@@ -21,15 +21,11 @@ export default function Hero() {
   return (
     <>
       <section id="hero_section">
-        <div className="cols col1">
+        <div id="col1">
           <Slide cascade damping={0.1} fraction={0}>
             <div id="hero_section_text">
-              <p id="upper_p">Aslam o alikum</p>
-              <h1 id="first_heading">My name is</h1>
-              <h1 id="second_heading">Abdul Mohiz</h1>
-              {/* <p id="lower_p">
-              A CNC Designer with a nice experience and creative skills
-            </p> */}
+              <h1 id="first_heading">Welcome To</h1>
+              <h1 id="second_heading">Mohiz Art World</h1>
             </div>
             <div id="social-media-icons-hero">
               <Link to={'https://www.instagram.com/abdul.mohiz.pk11/'}>
@@ -42,7 +38,8 @@ export default function Hero() {
               >
                 <FacebookIcon />
               </Link>
-              <Link to={'http://abdul.mohiz.pk11@gmail.co'}>
+
+              <Link to={'mailto:abdul.mohiz.pk11@gmail.com'}>
                 <MailOutlineIcon />
               </Link>
               <Link
@@ -55,7 +52,7 @@ export default function Hero() {
             </div>
           </Slide>
         </div>
-        <div className="cols col2">{/* <img src={first} alt="alt" /> */}</div>
+        <div id="col2">{/* <img src={first} alt="alt" /> */}</div>
       </section>
     </>
   );

@@ -40,6 +40,16 @@ export default function Experience() {
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         icon={<WorkIcon />}
       >
+        <h3 className="vertical-timeline-element-title">CNC Designer</h3>
+        <h4 className="vertical-timeline-element-subtitle">As a Freelancer</h4>
+        <p>3d Wood Modeling, 2d Designing, Machine Operating</p>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2006 - 2008"
+        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        icon={<WorkIcon />}
+      >
         <h3 className="vertical-timeline-element-title">Some Others</h3>
         <h4 className="vertical-timeline-element-subtitle">
           No Specific place

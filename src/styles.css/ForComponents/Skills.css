@@ -5,13 +5,12 @@
   padding-block: 60px;
 }
 
-#skill_section > ul,
-#skill_section > .zoom > h1 {
-  margin: auto;
+#skill_section h1 {
   color: #21325e;
 }
 
 #skill_section > .zoom > h1 {
+  margin: auto;
   font-size: 3rem;
   text-align: center;
 }

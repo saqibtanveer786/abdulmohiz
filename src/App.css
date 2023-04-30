@@ -6,4 +6,10 @@
 
 body {
   background-color: rgb(245, 245, 245);
+  scroll-margin-block: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

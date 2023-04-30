@@ -12,8 +12,8 @@
 #brief_description > .slide > #brief_image {
   height: 210px;
   width: 210px;
-  background: url(../../assets/1.jpg);
-  background-position: center;
+  background: url(../../assets/forHomePage/abdulmohiz2.jpg);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -37,7 +37,7 @@
 #brief_content > p {
   color: #3d3f49;
   font-size: large;
-  margin-block-end: 8px;
+  line-height: normal;
 }
 
 #brief_content > span {

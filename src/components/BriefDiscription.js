@@ -14,7 +14,7 @@ export default function BriefDiscription() {
         </Rotate>
         <Slide className="slide1" direction="left">
           <div id="brief_content">
-            <h1>Heading</h1>
+            <h1>Abdul Mohiz</h1>
             <p>I am Abdul Mohiz from pakistan...</p>
             <p>I am a CNC designer with</p>
             <p>many other skils. </p>
