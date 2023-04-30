@@ -1,13 +1,20 @@
-import React, { useState } from 'react';
-import preval from 'babel-plugin-preval/macro';
+import React, { useContext, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+
+//IMPORTTING MATERIAL UI ICONS
+
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 //IMPORTING CSS FILE
 import '../styles.css/ForPages/Admin.css';
 
-//IMPORTING DESIGNSLIST
-import designsList from '../helpers/designsList.json';
+//IMPORTING DESIGNS CONTEXT
+import DesignsContext from '../context/DesignsContext';
 
 export default function Admin() {
+  const { addDesign, getDesigns } = useContext(DesignsContext);
+  const navigate = useNavigate();
+
   const [title, setTitle] = useState(null);
   const [description, setDescription] = useState(null);
   const [image, setImage] = useState(null);
@@ -15,19 +22,16 @@ export default function Admin() {
     height: '300px',
     width: '300px',
     background: `url(${image ? image : ''})`,
-    backgroundPosition: 'center center',
-    backgroundSize: '300px',
-    backgroundRepeat: 'no-repeat no-repeat',
+    // backgroundPosition: 'center',
+    // backgroundSize: 'contain',
+    // backgroundRepeat: 'no-repeat',
   };
 
-  function Publish() {
-    const x = preval`
-  const fs = require('fs')
-  module.exports = fs.readFile(require.resolve(${designsList}), 'utf8')
-`;
-    // const jsonData = JSON.parse(x);
-    console.log(JSON.parse(x));
-  }
+  const design = {
+    title,
+    description,
+    image,
+  };
 
   return (
     <section id="admin_page">
@@ -47,9 +51,13 @@ export default function Admin() {
               : ' Our CNC wood design files are created using state-of-the- computer-aided design (CAD) software, resulting inrecise andintricate designs that can be manufactured using a computernumerical control (CNC) machine. These designs can be used to createa wide.'}
           </p>
           <p>
-            Our design files are created with attention to detail, ensuring that
-            they can be easily imported into your CNC machine and executed with
-            accuracy and consistency.
+            So If you want to buy this design odder me on
+            {
+              <Link style={{ color: 'black', marginTop: '12px' }}>
+                __WhatsApp
+                <WhatsAppIcon /> .
+              </Link>
+            }
           </p>
         </div>
       </div>
@@ -80,7 +88,14 @@ export default function Admin() {
             setImage(e.target.value);
           }}
         />
-        <button id="design_submit_button" onClick={Publish}>
+        <button
+          id="design_submit_button"
+          onClick={() => {
+            addDesign(design);
+            getDesigns();
+            navigate('/designs');
+          }}
+        >
           Publish
         </button>
       </div>

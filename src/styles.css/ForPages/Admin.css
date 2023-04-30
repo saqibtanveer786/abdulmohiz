@@ -64,6 +64,12 @@ textarea {
   width: min(350px, 100%);
 }
 
+#preview_image {
+  background-position: center;
+  background-size: cover;
+  /* background-repeat: no-repeat no-repeat; */
+}
+
 #preview_description > p {
   padding-block: 10px;
 }

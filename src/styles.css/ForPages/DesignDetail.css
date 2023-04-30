@@ -43,6 +43,12 @@
   text-align: left;
 }
 
+#detail_page_image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 #detail_page_col2 > p {
   padding-block-start: 20px;
   width: min(400px, 100%);

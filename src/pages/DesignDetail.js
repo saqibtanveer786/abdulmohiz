@@ -21,7 +21,7 @@ export default function DesignDetail() {
   const { getSpecificDesign, specificDesign } = useContext(DesignsContext);
 
   useEffect(
-    (id) => {
+    () => {
       getSpecificDesign(id);
     },
     // eslint-disable-next-line
@@ -32,9 +32,9 @@ export default function DesignDetail() {
     width: '500px',
     height: '410px',
     background: `url(${specificDesign && specificDesign.image})`,
-    backgroundPosition: 'center center',
-    backgroundSize: '500px',
-    backgroundRepeat: 'no-repeat no-repeat',
+    // backgroundPosition: 'center',
+    // backgroundSize: 'cover',
+    // backgroundRepeat: 'no-repeat',
   };
 
   return (
@@ -45,7 +45,7 @@ export default function DesignDetail() {
       </div>
       <div id="detail_page_col2">
         <h1>Description</h1>
-        <p>{specificDesign.description && specificDesign.description}</p>
+        <p>{specificDesign && specificDesign.description}</p>
         <p>
           So If you want to buy this design odder me on
           {
