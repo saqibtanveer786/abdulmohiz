@@ -53,7 +53,12 @@ export default function Admin() {
           <p>
             So If you want to buy this design odder me on
             {
-              <Link style={{ color: 'black', marginTop: '12px' }}>
+              <Link
+                to={
+                  'http://api.whatsapp.com/send?phone=+923421413220text=welcome'
+                }
+                style={{ color: 'black', marginTop: '12px' }}
+              >
                 __WhatsApp
                 <WhatsAppIcon /> .
               </Link>

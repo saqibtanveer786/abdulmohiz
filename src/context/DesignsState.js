@@ -6,7 +6,7 @@ export default function DesignsState(props) {
   const [specificDesign, setSpecificDesign] = useState(null);
 
   async function getDesigns() {
-    const url = `http://localhost:5000/api/v1/designs/alldesigns`;
+    const url = `https://axiomatic-winter-lute.glitch.me/api/v1/designs/alldesigns`;
     const design = await fetch(url, {
       method: 'get',
       headers: {
@@ -19,7 +19,7 @@ export default function DesignsState(props) {
   }
 
   async function getSpecificDesign(id) {
-    const url = `http://localhost:5000/api/v1/designs/getdesign/${id}`;
+    const url = `https://axiomatic-winter-lute.glitch.me/api/v1/designs/getdesign/${id}`;
     const specificdesign = await fetch(url, {
       method: 'get',
       headers: {
@@ -33,7 +33,7 @@ export default function DesignsState(props) {
   }
 
   async function addDesign(design) {
-    const url = `http://localhost:5000/api/v1/designs/adddesign`;
+    const url = `https://axiomatic-winter-lute.glitch.me/api/v1/designs/adddesign`;
     const addeddesign = await fetch(url, {
       method: 'post',
       headers: {
@@ -47,7 +47,7 @@ export default function DesignsState(props) {
   }
 
   async function updateDesign(id, design) {
-    const url = `http://localhost:5000/api/v1/designs/updatedesign${id}`;
+    const url = `https://axiomatic-winter-lute.glitch.me/api/v1/designs/updatedesign/${id}`;
     const updatedDesign = await fetch(url, {
       method: 'put',
       headers: {
@@ -61,7 +61,7 @@ export default function DesignsState(props) {
   }
 
   async function deleteDesign(id) {
-    const url = `http://localhost:5000/api/v1/designs/deletedesign${id}`;
+    const url = `https://axiomatic-winter-lute.glitch.me/api/v1/designs/deletedesign/${id}`;
     const deletedDesign = await fetch(url, {
       method: 'delete',
       headers: {
